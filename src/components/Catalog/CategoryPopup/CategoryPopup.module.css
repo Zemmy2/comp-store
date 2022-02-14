@@ -1,0 +1,25 @@
+.menu {
+  margin-top: 2px;
+  padding: 2px;
+  border: 1px solid #26323a;
+  border-radius: 5px;
+}
+
+.menu ul {
+  text-align: center;
+}
+
+.menu li {
+  width: 100%;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s linear;
+}
+
+.menu li:hover {
+  opacity: 1;
+}
+
+.menu li.active {
+  opacity: 1;
+}

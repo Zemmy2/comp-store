@@ -1,0 +1,15 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.top button {
+  margin-top: 5px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

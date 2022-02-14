@@ -1,0 +1,38 @@
+.nav {
+  padding: 8px 0;
+  width: 100%;
+  background: #26323a;
+}
+
+.navInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+}
+
+.navItems {
+  display: flex;
+}
+
+.navItems li {
+  margin: 0 7px;
+  font-size: 18px;
+}
+
+.navItems li a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s linear;
+}
+
+.navItems li a.active {
+  color: #fff;
+}
+
+.navItems li a:hover {
+  color: #fff;
+}

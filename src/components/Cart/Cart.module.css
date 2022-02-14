@@ -1,0 +1,31 @@
+table {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+table td {
+  width: 25%;
+}
+
+table td img {
+  width: 15%;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+.emptyCartBlock {
+  text-align: center;
+}
+
+.emptyCartBlock img {
+  margin-bottom: 20px;
+}
+
+.emptyCartBlock h2 {
+  margin-bottom: 10px;
+  color: #7a7a7a;
+}

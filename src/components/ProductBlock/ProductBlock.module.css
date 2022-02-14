@@ -1,0 +1,20 @@
+.item {
+  max-width: 33.33333%;
+  margin-bottom: 10px;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}

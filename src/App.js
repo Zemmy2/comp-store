@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Catalog from './components/Catalog/Catalog';
 import Cart from './components/Cart/Cart';
+import Login from './components/Login/Login';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/catalog' element={<Catalog />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/login' element={<Login />} />
         </Routes>
       </div>
     </div>

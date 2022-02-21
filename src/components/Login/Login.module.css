@@ -1,0 +1,18 @@
+.wrap {
+  position: relative;
+  height: 40vw;
+}
+
+.loginBlock {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #26323a;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

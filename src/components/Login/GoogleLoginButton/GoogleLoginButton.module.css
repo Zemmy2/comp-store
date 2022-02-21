@@ -1,0 +1,9 @@
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn div {
+  margin-right: 5px;
+}

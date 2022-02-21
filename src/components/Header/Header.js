@@ -1,7 +1,21 @@
+import { getAuth, signOut } from 'firebase/auth';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link, NavLink } from 'react-router-dom';
+import { setAuthUserData } from '../../redux/auth-reducer';
+import Button from '../common/Button/Button';
 import styles from './Header.module.css';
 
 const Header = () => {
+  const auth = getAuth();
+  const dispatch = useDispatch();
+  const user = useSelector(state => state.auth.user);
+
+  const logout = () => {
+    signOut(auth).then(() => {
+      dispatch(setAuthUserData(null));
+    });
+  };
+
   return (
     <ul className={styles.nav}>
       <div className={`${styles.navInner} container`}>
@@ -32,6 +46,23 @@ const Header = () => {
             >
               Корзина
             </NavLink>
+          </li>
+          <li>
+            {user ? (
+              <div>
+                <span className={styles.name}>{user.displayName} - </span>
+                <Button onClick={logout} outline>
+                  Выйти
+                </Button>
+              </div>
+            ) : (
+              <NavLink
+                to='/login'
+                className={({ isActive }) => (isActive ? styles.active : '')}
+              >
+                Войти
+              </NavLink>
+            )}
           </li>
         </ul>
       </div>

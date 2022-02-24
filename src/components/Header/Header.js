@@ -39,14 +39,16 @@ const Header = () => {
               Каталог
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to='/cart'
-              className={({ isActive }) => (isActive ? styles.active : '')}
-            >
-              Корзина
-            </NavLink>
-          </li>
+          {user && (
+            <li>
+              <NavLink
+                to='/cart'
+                className={({ isActive }) => (isActive ? styles.active : '')}
+              >
+                Корзина
+              </NavLink>
+            </li>
+          )}
           <li>
             {user ? (
               <div>

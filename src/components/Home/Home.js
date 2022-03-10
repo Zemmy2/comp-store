@@ -1,10 +1,15 @@
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from '../common/Button/Button';
 import styles from './Home.module.css';
 
 const Home = () => {
   const items = useSelector(state => state.cart.items);
+  const navigate = useNavigate();
+
+  const routeChange = path => {
+    navigate('/' + path);
+  };
 
   return (
     <div>
@@ -13,27 +18,28 @@ const Home = () => {
         {items.length > 0 ? (
           <div>
             <p>В корзине {items.length} товаров</p>
-            <Button className={styles.btn}>
-              <Link to='/cart'>Перейти в корзину</Link>
+            <Button onClick={() => routeChange('cart')} className={styles.btn}>
+              Перейти в корзину
             </Button>
           </div>
         ) : (
           <div>
             <p>В корзине ничего нет</p>
-            <Button className={styles.btn}>
-              <Link to='/catalog'>Перейти в каталог</Link>
+            <Button
+              onClick={() => routeChange('catalog')}
+              className={styles.btn}
+            >
+              Перейти в каталог
             </Button>
           </div>
         )}
         <div>
-          <Button>
-            <Link to='/catalog'>Каталог</Link>
-          </Button>
+          <Button onClick={() => routeChange('catalog')}>Каталог</Button>
         </div>
       </div>
       <div className={styles.banner}>
-        <Button outline>
-          <Link to='/catalog'>Все предложения ➤</Link>
+        <Button onClick={() => routeChange('catalog')} outline>
+          Все предложения ➤
         </Button>
       </div>
     </div>

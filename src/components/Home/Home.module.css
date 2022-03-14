@@ -15,9 +15,16 @@
   align-items: center;
   background: #a5a5a5;
   border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
 }
 
-.banner button {
-  margin-left: 30px;
-  font-size: 16px;
+.banner img {
+  position: absolute;
+}
+
+.banner:hover {
+  opacity: 0.8;
 }

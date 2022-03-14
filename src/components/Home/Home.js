@@ -1,6 +1,10 @@
 import { useSelector } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Button from '../common/Button/Button';
+import Banner1 from '../../assets/images/banner1.webp';
+import Banner2 from '../../assets/images/banner2.webp';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 import styles from './Home.module.css';
 
 const Home = () => {
@@ -37,11 +41,14 @@ const Home = () => {
           <Button onClick={() => routeChange('catalog')}>Каталог</Button>
         </div>
       </div>
-      <div className={styles.banner}>
-        <Button onClick={() => routeChange('catalog')} outline>
-          Все предложения ➤
-        </Button>
-      </div>
+      <Carousel showStatus={false} showThumbs={false} autoPlay infiniteLoop>
+        <div onClick={() => routeChange('catalog')} className={styles.banner}>
+          <img src={Banner1} />
+        </div>
+        <div onClick={() => routeChange('catalog')} className={styles.banner}>
+          <img src={Banner2} />
+        </div>
+      </Carousel>
     </div>
   );
 };

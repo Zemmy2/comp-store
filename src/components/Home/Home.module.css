@@ -28,3 +28,9 @@
 .banner:hover {
   opacity: 0.8;
 }
+
+.cardItems {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}

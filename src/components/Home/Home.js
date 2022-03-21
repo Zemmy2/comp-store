@@ -6,6 +6,16 @@ import Banner2 from '../../assets/images/banner2.webp';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import styles from './Home.module.css';
+import Card from './Card/Card';
+import PhonesImg from '../../assets/images/phones.svg';
+import TabletsImg from '../../assets/images/tablets.svg';
+import LaptopsImg from '../../assets/images/laptops.svg';
+
+const cardItems = [
+  { title: 'Телефоны', type: 0, image: PhonesImg },
+  { title: 'Планшеты', type: 1, image: TabletsImg },
+  { title: 'Ноутбуки', type: 2, image: LaptopsImg },
+];
 
 const Home = () => {
   const items = useSelector(state => state.cart.items);
@@ -49,6 +59,11 @@ const Home = () => {
           <img src={Banner2} />
         </div>
       </Carousel>
+      <div className={styles.cardItems}>
+        {cardItems.map(item => {
+          return <Card {...item} />;
+        })}
+      </div>
     </div>
   );
 };

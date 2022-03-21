@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/comp-store/static/css/main.a1f01683.css",
-    "main.js": "/comp-store/static/js/main.0d74e682.js",
+    "main.css": "/comp-store/static/css/main.d0c064e6.css",
+    "main.js": "/comp-store/static/js/main.e231a73b.js",
     "static/media/preloader.gif": "/comp-store/static/media/preloader.b4d382f5ac04982dc2bd.gif",
     "static/media/banner1.webp": "/comp-store/static/media/banner1.157699e7b4d3712564be.webp",
     "static/media/banner2.webp": "/comp-store/static/media/banner2.006fd41f1b6f11e63172.webp",
+    "static/media/tablets.svg": "/comp-store/static/media/tablets.9aae6b648070913372414cb25ce542f4.svg",
+    "static/media/phones.svg": "/comp-store/static/media/phones.e4f4465191941171e517d5cb099c7d1b.svg",
     "static/media/google-logo.svg": "/comp-store/static/media/google-logo.66ae25beb1eb0655ac594978ee31ddb2.svg",
+    "static/media/laptops.svg": "/comp-store/static/media/laptops.2c758af4e598fbc796981110b3073931.svg",
     "index.html": "/comp-store/index.html",
-    "main.a1f01683.css.map": "/comp-store/static/css/main.a1f01683.css.map",
-    "main.0d74e682.js.map": "/comp-store/static/js/main.0d74e682.js.map"
+    "main.d0c064e6.css.map": "/comp-store/static/css/main.d0c064e6.css.map",
+    "main.e231a73b.js.map": "/comp-store/static/js/main.e231a73b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1f01683.css",
-    "static/js/main.0d74e682.js"
+    "static/css/main.d0c064e6.css",
+    "static/js/main.e231a73b.js"
   ]
 }
